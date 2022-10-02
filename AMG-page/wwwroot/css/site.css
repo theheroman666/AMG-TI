@@ -1,0 +1,111 @@
+@import url("~/css/Martel/Martel-Regular.ttf");
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        /*background-color: #252325;*/
+        background-image: url(/img/grunge-brick-wall-background.jpg);
+        font-size: 'Martel';
+        background-size: cover;
+        background-position: background-attachment: center center;
+        fixed;
+        /*Complatible con resto de navegadores*/
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        color: aliceblue !important;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /*background-color: #252325;*/
+    background: url(/img/grunge-brick-wall-background.png) no-repeat center center fixed;
+    font-size: 'Martel', 'Regular';
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: aliceblue !important;
+}
+
+#btn-portafolio {
+    background-color: #8321F3;
+    border-radius: 25px;
+}
+
+.spinner-load {
+    background-color: rgba(250, 240, 245, 0.5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+
+.spinner {
+    border: 15px solid #ccc;
+    border-top-color: #8739d1;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.glass-effect{
+    backdrop-filter: blur(2.3px);
+    background-color: rgb(168, 168, 168, 0.16);
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+img {
+    object-fit: cover;
+}
+
+.cabecera {
+    backdrop-filter: blur(2.2px);
+    background-color: rgb(51, 50, 50, 0.60);
+    border-radius: 0px 0px 10px 10px;
+    border: 0.9px solid rgb(169, 169, 169, 0.15);
+}
+
+.bottom-page {
+    border: 0.5px solid #000;
+    border-radius: 15px 15px 0 0;
+    background: rgb(6,7,68);
+    background: linear-gradient(90deg, rgba(6,7,68,1) 0%, rgba(75,10,71,1) 100%);
+}
